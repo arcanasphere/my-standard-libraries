@@ -1,0 +1,19 @@
+@mixin grooming-border-radius ($radius)
+{
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+
+@mixin grooming-box-shadows($x, $y, $spread, $color) 
+{
+  -webkit-box-shadow: $x $y $spread 0px $color;
+  -moz-box-shadow: $x $y $spread 0px $color;
+  -ms-box-shadow: $x $y $spread 0px $color;
+  -o-box-shadow: $x $y $spread 0px $color;
+  box-shadow: $x $y $spread 0px $color;
+}

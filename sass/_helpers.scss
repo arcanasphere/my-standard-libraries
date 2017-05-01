@@ -1,0 +1,73 @@
+/* Begin Helpers */
+.ListTitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ListTitle > ul, .ListTitle > ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+
+sup.fractop {
+  vertical-align: text-top;
+  font-size: 0.65em;
+  top: 0.25em;
+}
+
+sub.fracbot {
+  vertical-align: text-bottom;
+  font-size: 0.65em;
+  bottom: 0.25em;
+}
+
+
+
+.BlueNotice {
+  color: #00f;
+}
+
+.RedNotice {
+  color: #f00;
+}
+
+
+
+
+.sm-right, .md-right, .lg-right, .sm-left, .md-left, .lg-left {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sm-right {
+    text-align: right;
+  }
+
+  .sm-left {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .md-right {
+    text-align: right;
+  }
+
+  .md-left {
+    text-align: left;
+  }
+}
+@media (min-width: 1170px) {
+  .lg-right {
+    text-align: right;
+  }
+
+  .lg-left {
+    text-align: left;
+  }
+}
+
+
+
+/* End Helpers */

@@ -1,0 +1,20 @@
+<!-- This version of the code works with UPCs either embedded in the HTML code -->
+<!-- OR -->
+<!-- ...it works with code inserted by PegasusCart. -->
+<!--  Insert at the bottom of the HTML code once. -->
+<!--  Change #FullPageContainer to any container with an ID. -->
+
+<!-- Start Display/Hide UPC Table Code -->
+<script>
+$("#FullPageContainer").on("click", ".UPCheadline", function() {
+  var $Uparent = $(this).closest("div.UPCoptions");
+  var $Ucodes = $Uparent.find("div.UPCcodes");
+  if( $($Ucodes).is(":hidden") )
+  {
+    $($Ucodes).slideDown(750);
+  } else {
+    $($Ucodes).hide();
+  }
+});
+</script>
+<!-- End Display/Hide UPC Table Code -->

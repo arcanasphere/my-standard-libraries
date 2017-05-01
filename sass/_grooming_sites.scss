@@ -1,0 +1,258 @@
+/* Begin Default CSS for all Grooming Sites */
+
+
+body {
+  color: #000;
+  background-color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+20,ffffff+20,ffffff+20,ffffff+100 */
+  background: -moz-linear-gradient(top, #000000 0%, #000000 20%, #ffffff 20%, #ffffff 20%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #000000 0%,#000000 20%,#ffffff 20%,#ffffff 20%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #000000 0%,#000000 20%,#ffffff 20%,#ffffff 20%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div#FullPageContainer {
+  background-color: #fff;
+}
+
+@media screen and (min-width:768px)
+{
+  div#FullPageContainer {
+    border: 1px solid #bfbfbf;
+    margin-top: 30px;
+  }
+}
+
+
+
+/* Begin Top Navbar Area */
+
+div.logo-image {
+  height: 180px;
+  background-color: #fff;
+  background-position: top right;
+}
+
+div#logo-links {
+  height: 180px;
+}
+
+div#SiteName a, div#TopSiteLinks a {
+  color: #000;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+div#SiteName a:hover, div#TopSiteLinks a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px)
+{
+  div#SiteName {
+    font-size: 3em;
+    letter-spacing: -1px;
+  }
+}
+
+div#TopSitePhoneNumber {
+  font-weight: 600;
+  color: #000;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+div.navbar-header {
+  background-color: #809538;
+  font-weight: 600;
+}
+
+#dog-grooming-navbar-collapse {
+  background: #809538; /* Old browsers */
+  background: -moz-linear-gradient(top, #809538 0%, #8dab31 50%, #86a428 53%, #b6ce3a 98%, #b6ce3a 98%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #809538 0%,#8dab31 50%,#86a428 53%,#b6ce3a 98%,#b6ce3a 98%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #809538 0%,#8dab31 50%,#86a428 53%,#b6ce3a 98%,#b6ce3a 98%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#809538', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+@media screen and (max-width: 767px)
+{
+  #dog-grooming-navbar-collapse {
+    background: #809538; /* Old browsers */
+    background: -moz-linear-gradient(top, #809538 0%, #8dab31 16%, #86a428 32%, #b6ce3a 45%, #b6ce3a 46%, #ffffff 47%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #809538 0%,#8dab31 16%,#86a428 32%,#b6ce3a 45%,#b6ce3a 46%,#ffffff 47%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #809538 0%,#8dab31 16%,#86a428 32%,#b6ce3a 45%,#b6ce3a 46%,#ffffff 47%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#809538', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  }
+}
+
+@media screen and (min-width:992px)
+{
+  .col-md-7across {
+    width: (100% / 7);
+    text-align: center;
+  }
+}
+
+div#dog-grooming-navbar-collapse {
+  width: 100%;
+}
+
+div.GroomingNavDropDown {
+  background-color: #373d3a;
+  letter-spacing: -1px;
+  margin: 10px auto;
+  padding: 6px 1px 6px 0px;
+  color: #fff;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-style: solid;
+  border-color: #4a5d72;
+  border-width: 0px 0px 4px 0px;
+  width: 94%;
+  font-weight: bold;
+  @include grooming-border-radius(10px);
+}
+
+@media (min-width: 992px) and (max-width: 1169px)
+{
+  div.GroomingNavDropDown {
+    font-size: 11px;
+  }
+}
+
+ul.dropdown-menu {
+  padding: 10px;
+  background: #7D9932;
+  border: 2px solid #C2CFEA;
+  @include grooming-border-radius(10px);
+}
+
+ul.dropdown-menu li a {
+  color: #000;
+  weight: 600;
+}
+
+ul.dropdown-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #435511;
+  @include grooming-border-radius(5px);
+}
+
+@media screen and (max-width: 767px) {
+  div#dog-grooming-navbar-collapse {
+    padding-bottom: 32em;
+  }
+
+  div.GroomingNavDropDown {
+    width: 80%;
+  }
+
+  ul.dropdown-menu {
+    width: 100%;
+    background-color: #d6ef8f;
+  }
+
+  ul.dropdown-menu li {
+    padding: 0.75em 15px;
+  }
+
+  ul.dropdown-menu li a {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f0fccf;
+    @include  grooming-border-radius(5px);
+  }
+}
+
+/* End Top Navbar Area */
+
+
+
+
+/* Begin Single Presentation Areas */
+
+div.product-image {
+  text-align: center;
+}
+
+div.product-row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  @include grooming-box-shadows(15px, 15px, 15px, #4f5f71);
+}
+
+div.product-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.product-row img.c {
+  max-height: 25px;
+  max-width: auto;
+}
+
+div.product-row a {
+  color: #809b30;
+  font-weight: 600;
+}
+
+div.product-row a:hover {
+  color: #800080;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* End Single Presentation Areas */
+
+
+
+/* Begin Polices Page */
+
+h1.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #626456;
+  letter-spacing: -0.075em;
+  font-size: 3em;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+img.info-image-left {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+/* End Polices Page */
+
+/* Begin Footer */
+
+div#footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 14px;
+  color: #ccc;
+  background-image: url('/images/img08.png');
+  border-top: 5px solid #ccc;
+}
+
+
+
+/* End Footer */
+
+
+/* End Default CSS for all Grooming Sites */

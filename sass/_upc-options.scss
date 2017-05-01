@@ -1,0 +1,74 @@
+/* Begin CSS for UPC List Dropdown */
+.UPCoptions
+{
+  border: 1px solid #7d9932;
+  width:225px;
+  background-color: #d4e388;
+  padding:0;
+  color: #333;
+}
+
+.UPCheadline {
+  cursor: pointer;
+}
+
+.UPCoptions .UPCheadline
+{
+  display:block;
+  border: 1px solid #7d9932;
+  margin:0;
+  text-align:center;
+}
+
+.UPCoptions .UPCcodes
+{
+  display:none;
+}
+
+.UPCoptions .UPCcodes table
+{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.UPCoptions .UPCcodes table tr td
+{
+  width:50%;
+  text-align:left;
+}
+
+.UPCoptions .UPCcodes table tr td:nth-child(2)
+{
+  width:50%;
+  text-align:right;
+}
+
+
+.UPCoptions .UPCcodes table tr:nth-child(odd) td
+{
+  background-color: #fff;
+}
+
+
+@media (min-width:641px)
+{
+  .UPCleft
+  {
+    float:left;
+  }
+
+  .UPCnoclear
+  {
+    clear:none;
+  }
+}
+
+
+@media (max-width:640px)
+{
+  .UPCoptions
+  {
+    margin: 3px auto;
+  }
+}
+/* End CSS for UPC List Dropdown */
