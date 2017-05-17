@@ -1,0 +1,12 @@
+div.peg-ratecheck {
+  max-height: 240px;
+  overflow-y: auto;
+  margin: auto;
+  border: 2px solid #999;
+}
+
+@media screen and (min-width:992px) {
+  div.peg-ratecheck {
+    max-width: 720px;
+  }
+}
