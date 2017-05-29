@@ -2,12 +2,14 @@
 
   /* Add the necessary div for the lightbox */
   /* Lightbox will appear on either a link either:
-    1) inside of div.product row, if the link is an image.
-    2) with class PegBootLightBoxLink, if the link is an image
-  */
-  $(document).ready(function() {
-    $("#FullPageContainer").append('<div id="PegBootLightBox"><h2 id="PegBootLightBoxHeadline"></h2></div>');
-  });
+    1) inside of div.product-row, if the link is an image.
+    2) with class PegBootLightBoxLink, if the link is an image   */
+
+  /* function preparePegBootLightBox() must be called by html file.
+     See associated grooming-site-lightbox.html for an example. */
+  function preparePegBogLightBox() {
+    $("#FullPageContainer").append('<div id="PegBootLightBox"><h2 id="PegBootLightBoxHeadline"></h2><span class="glyphicon glyphicon-remove-circle" id="PegBootLightBoxCloseIcon"></span></div>');
+  }
 
   /* Begin code to find & show the lightbox + image when clicked */
   $("#FullPageContainer").on("click", ".product-row a, a.PegBootLightBoxLink", function(e) {

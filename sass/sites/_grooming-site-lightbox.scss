@@ -19,10 +19,22 @@ h2#PegBootLightBoxHeadline {
   text-align: center;
   border: 0;
   margin: 0 0 0.25em 0;
+  padding: 3px 40px;
   display: block;
   background-color: #909890;
   background-color: rgba(0, 16, 0, 0.375);
   border-bottom: 2px solid #606060;
+  font-size: 32px;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #080);
+}
+
+span#PegBootLightBoxCloseIcon {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  font-size: 32px;
+  color: #eee;
+  @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #800);
+  cursor: pointer;
 }
 /* end code grooming-site-lightbox */
