@@ -9,11 +9,35 @@
 }
 
 
-@mixin grooming-box-shadows($x, $y, $spread, $color) 
+@mixin grooming-box-shadows($x, $y, $spread, $color)
 {
   -webkit-box-shadow: $x $y $spread 0px $color;
   -moz-box-shadow: $x $y $spread 0px $color;
   -ms-box-shadow: $x $y $spread 0px $color;
   -o-box-shadow: $x $y $spread 0px $color;
   box-shadow: $x $y $spread 0px $color;
+}
+
+
+@mixin grooming-text-shadows($x, $y, $blur, $color)
+{
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin grooming-text-outline ($width, $color)
+{
+  text-shadow: $width $width 0px $color,
+  $width -$width 0px $color,
+  -$width $width 0px $color,
+  -$width -$width 0px $color;
+}
+
+@mixin grooming-text-outline-plus-shadow ($width, $color, $sx, $sy, $sblur, $scolor)
+{
+  text-shadow:
+  $sx $sy $sblur $scolor,
+  $width $width 0px $color,
+  $width (0-$width) 0px $color,
+  (0-$width) $width 0px $color,
+  (0-$width) (0-$width) 0px $color;
 }

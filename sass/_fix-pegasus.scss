@@ -4,4 +4,22 @@ table.pegBuyBar tbody {
   margin-right: auto;
   display: table !important;
 }
+
+@media screen and (min-width: 768px)
+{
+  table.pegBuyBar tbody {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  table.pegBuyBar tbody {
+    width: 85%;
+  }
+}
+
+.pegBbItem .PartNum {
+  white-space: nowrap;
+}
 /* End  _fix-pegasus */

@@ -1,0 +1,27 @@
+/* Begin responsive-videos */
+@media screen and (max-width: 767px) {
+  div.video-xs video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  div.video-sm video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  div.video-md video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+div.video-xl video {
+  max-width: 100%;
+  height: auto;
+}
+/* End responsive-videos */

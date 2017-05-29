@@ -10,11 +10,15 @@ div#PegBootLightBox {
   background-repeat: no-repeat;
   display: none;
   z-index: 1001;
+  background-size: contain;
 }
 
 h2#PegBootLightBoxHeadline {
   color: #fff;
   width: 100%;
   text-align: center;
+  border: 0;
+  margin: 0;
+  @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #080);
 }
 /* end code grooming-site-lightbox */

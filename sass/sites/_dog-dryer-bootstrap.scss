@@ -1,0 +1,168 @@
+/* Begin CSS specific to Dog-Dryer.com */
+div#dog-dryer-logo-image {
+  background-color: #fff;
+  background-image: url('/images/header2.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+div#TopSiteLinksPolicies a,
+div#SiteNamePolicies a {
+  color: #000;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 992px)
+{
+  div#SiteName {
+    padding-top: 55px;
+  }
+
+  div#SiteName h1 {
+    margin-top: 0;
+  }
+
+  div#TopSiteLinks div:first-of-type {
+    padding-top: 32px;
+  }
+
+  div#TopSiteLinksPolicies div:first-of-type {
+    padding-top: 72px;
+  }
+
+  div#SiteNamePolicies {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px)
+{
+  div#SiteName {
+    height: 180px;
+    padding-top: 70px
+  }
+}
+
+@media screen and (max-width:767px)
+{
+  div#SiteName {
+    padding-top: 180px
+  }
+}
+
+
+/* Begin insets for shop4-dog-shampoo */
+div.inset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: #f3faec;
+  color: #000;
+}
+
+div.inset a {
+  color: #088;
+}
+
+div.inset a:hover, div.inset a:active {
+  color: #368;
+}
+
+@media screen and (min-width: 768px) {
+  div.inset {
+    max-height: 92px;
+    overflow: auto;
+    font-size: 13px;
+  }
+}
+/* End insets for shop4-dog-shampoo */
+
+div.OversizeInfo {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+td.BuyBarBefore {
+  text-align: center;
+}
+
+td.BuyBarBefore img {
+  margin: 0 auto;
+}
+
+
+table.MetroChart {
+  border: 1px solid #ccc;
+  @include grooming-box-shadows(1px, 2px, 3px, #333);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.MetroChart tbody tr td {
+  white-space: nowrap;
+}
+
+table.MetroChart tbody tr.CurrentMetroDryer td {
+  background-color: #c3dfc3;
+  white-space: nowrap;
+}
+
+table.FancyMetroChart {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+}
+
+table.FancyMetroChart tbody tr.BoldRow td {
+  font-weight: 600;
+}
+
+table.FancyMetroChart tbody tr th {
+  background-color: #00c0c0;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+table.FancyMetroChart tbody tr:nth-of-type(2n+1) td {
+  background-color: #bbb;
+  color: #000;
+}
+
+table.FancyMetroChart tbody tr td {
+  white-space: nowrap;
+  padding-right: 25px;
+}
+
+table.FancyMetroChart tbody tr td:last-of-type {
+  padding-right: 5px;
+}
+
+div#DogDryerInfo p {
+  font-size: 1em;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+div#DogDryerInfo h1 {
+  color: #626456;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+div#DogDryerInfo h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+div#DogDryerInfo h5 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+}
+
+
+/* End CSS specific to Dog-Dryer.com */
