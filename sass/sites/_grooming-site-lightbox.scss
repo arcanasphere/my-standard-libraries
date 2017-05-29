@@ -1,5 +1,6 @@
 /* Begin code grooming-site-lightbox */
 div#PegBootLightBox {
+  background-color: #fff;
   background-color: rgba(64, 68, 64, 0.875);
   position: fixed;
   top: 0;
@@ -26,6 +27,7 @@ h2#PegBootLightBoxHeadline {
   border-bottom: 2px solid #606060;
   font-size: 32px;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #080);
+  z-index: 1002;
 }
 
 span#PegBootLightBoxCloseIcon {
@@ -36,5 +38,12 @@ span#PegBootLightBoxCloseIcon {
   color: #eee;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #800);
   cursor: pointer;
+  z-index: 1003;
+}
+
+@media screen and (max-width: 767px) {
+  h2#PegBootLightBoxHeadline, span#PegBootLightBoxCloseIcon {
+    font-size: 18px;
+  }
 }
 /* end code grooming-site-lightbox */
