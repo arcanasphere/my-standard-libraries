@@ -18,7 +18,11 @@ h2#PegBootLightBoxHeadline {
   width: 100%;
   text-align: center;
   border: 0;
-  margin: 0;
+  margin: 0 0 0.25em 0;
+  display: block;
+  background-color: #909890;
+  background-color: rgba(0, 16, 0, 0.375);
+  border-bottom: 2px solid #606060;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #080);
 }
 /* end code grooming-site-lightbox */
