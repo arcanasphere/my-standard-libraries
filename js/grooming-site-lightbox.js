@@ -30,3 +30,10 @@
     }
   });
   /* End code to find & show the lightbox + image when clicked */
+
+
+      /* Begin Close the lightbox area when clicked. */
+      $("#FullPageContainer").on("click", "#PegBootLightBox", function() {
+        $("#PegBootLightBox").fadeOut($FadeSpeed);
+      });
+      /* End Close the lightbox area when clicked. */
