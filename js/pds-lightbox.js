@@ -20,7 +20,12 @@ $("#PageBody").on("click", "div.item a, a.LightBoxLink", function(e) {
     case 'gif':
     case 'jpg':
     case 'png':
-      $("#PDSLightBoxInner").css('background-image', 'url(' + $ThisLink + ')');
+      if ($(this).data("largeImage")) {
+        $("#PDSLightBoxInner").css('background-image', 'url(' + $(this).data("largeImage") + ')');
+      } else {
+        $("#PDSLightBoxInner").css('background-image', 'url(' + $ThisLink + ')');
+      }
+
       /* Begin Add Headline */
       var $picParent = $(this).closest("div#PageBody");
       var $picHeadline = $picParent.find("h2");
