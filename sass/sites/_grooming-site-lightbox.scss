@@ -14,6 +14,16 @@ div#PegBootLightBox {
   background-size: contain;
 }
 
+div#PegBootLightBoxInner {
+  width: 96%;
+  height: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1002;
+  margin: 2%;
+  background-size: contain;
+}
+
 h2#PegBootLightBoxHeadline {
   color: #fff;
   width: 100%;
@@ -27,7 +37,7 @@ h2#PegBootLightBoxHeadline {
   border-bottom: 2px solid #606060;
   font-size: 32px;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #080);
-  z-index: 1002;
+  z-index: 1003;
 }
 
 span#PegBootLightBoxCloseIcon {
@@ -38,7 +48,7 @@ span#PegBootLightBoxCloseIcon {
   color: #eee;
   @include grooming-text-outline-plus-shadow(1px, #000, 0px, 0px, 3px, #800);
   cursor: pointer;
-  z-index: 1003;
+  z-index: 1004;
 }
 
 @media screen and (max-width: 767px) {
