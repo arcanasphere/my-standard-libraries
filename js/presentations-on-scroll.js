@@ -7,19 +7,15 @@ function lazyload(){
   var wt = $(window).scrollTop();    //* top of the window
   var wb = wt + $(window).height();  //* bottom of the window
 
-  $(".buybars").each(function(){
+  $(".buy").each(function(){
     var ot = $(this).offset().top;  //* top of object (i.e. advertising div)
     var ob = ot + $(this).height(); //* bottom of object
-    var thisPres = $(this).data("presentation");
-    // console.log('thisPres = ' + thisPres);
     var thisDiv = $(this).attr('id');
     var thisPres = thisDiv.replace('buybars','');
-    // console.log('thisPres loseBuyBars version = ' + thisPres);
+    var thisPresChildElements = $(this).children().length;
 
-
-    if(!$(this).attr("loaded") && wt<=ob && wb >= ot){
-       $(this).html("..");
-       $(this).attr("loaded",true);
+    // console.log(thisPres + " inside: " + thisPresChildElements);
+    if(wt<=ob && wb >= ot && thisPresChildElements == 0){
        lazyLoadPres(thisPres);
     }
   });
