@@ -1,0 +1,127 @@
+/* Begin _large-dog-crates.scss */
+#static-dogCrate {
+  background-image: url('/img/walking-dog-bg-green3.png');
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  h1 {
+    @include grooming-text-outline-plus-shadow(1px, $old-graygreen, 1px, 2px, 3px, $bg-gray4);
+    color: #fff;
+  }
+  #static-subtitle {
+    background-color: $bg-gray1;
+    color: #111;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    font-size: $static-size;
+    padding-top: $static-size;
+    padding-bottom: $static-size;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  #DogCrateNavbar {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1170px;
+      display: table !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #static-dogCrate {
+    background-image: url('/img/walking-dog-bg-green-sm.png');
+  }
+}
+
+
+#buffer {
+  background-color: $dog-walking-green;
+  height: 50px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #buffer {
+    height: 101px;
+  }
+}
+
+
+/* Front Page Information */
+
+div#front-page-links {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:991px) {
+  div#front-page-links {
+    img {
+      padding: 15px;
+    }
+  }
+}
+
+.front-page-single-link {
+  .row {
+    border: 1px solid $crate-green1;
+    @include grooming-box-shadows(2px, 3px, 5px, rgba(0,0,0,0.25));
+  }
+  a {
+    color: $crate-green4;
+    font-weight: 600;
+    @include safe-transition(color 0.125s ease-in);
+    &:hover {
+      text-decoration: none;
+      color: $bg-gray4;
+    }
+  }
+  a.fpsl-link {
+    color: $crate-green4;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover {
+      color: $bg-gray4;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .front-page-single-link {
+    padding: 0 20px 5px 20px;
+    height: 468px;    /* 592 at md-6, 468 at md-3 */
+    .row {
+      height: 460px;    /* 584 at md-6, 460 at md-3 */
+      overflow-y: auto;
+    }
+    .col-md-12 {
+      padding-top: 15px;
+    }
+  }
+  a.fpsl-link {
+    border-top: 1px solid $bg-gray1;
+    display: block;
+    text-align: left;
+    padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .front-page-single-link {
+    margin-top: 15px;
+  }
+  .ListTitle {
+    padding-top: 15px;
+  }
+}
+/* end front page information */
+
+
+
+/* end _large-dog-crates.scss */

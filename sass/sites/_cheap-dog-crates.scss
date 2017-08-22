@@ -1,0 +1,41 @@
+/* Begin _cheap-dog-crates.scss */
+#static-dogCrate {
+  background-image: url('/img/walking-dog-bg-green3.png');
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  h1 {
+    @include grooming-text-outline-plus-shadow(1px, $old-graygreen, 1px, 2px, 3px, $bg-gray4);
+    color: #fff;
+  }
+  #static-subtitle {
+    background-color: $bg-gray1;
+    color: #111;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    font-size: $static-size;
+    padding-top: $static-size;
+    padding-bottom: $static-size;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #static-dogCrate {
+    background-image: url('/img/walking-dog-bg-green-sm.png');
+  }
+}
+
+#buffer {
+  background-color: $dog-walking-green;
+  height: 50px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #buffer {
+    height: 101px;
+  }
+}
+
+/* end _cheap-dog-crates.scss */

@@ -41,6 +41,18 @@ sub.fracbot {
   color: #c00000;
 }
 
+.size8Notice {
+  font-size: 8px;
+}
+
+.size10Notice {
+  font-size: 10px;
+}
+
+.size12Notice {
+  font-size: 12px;
+}
+
 
 
 .InstaSerif {
@@ -56,11 +68,20 @@ sub.fracbot {
 
 
 
-.sm-right, .md-right, .lg-right, .sm-left, .md-left, .lg-left {
+.sm-right, .md-right, .lg-right, .sm-left, .md-left, .lg-left, .xs-right, .xs-left {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .xs-right {
+    text-align: right;
+  }
+  .xs-left {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .sm-right {
     text-align: right;
   }
@@ -69,7 +90,7 @@ sub.fracbot {
     text-align: left;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .md-right {
     text-align: right;
   }
@@ -78,7 +99,7 @@ sub.fracbot {
     text-align: left;
   }
 }
-@media (min-width: 1170px) {
+@media screen and (min-width: 1170px) {
   .lg-right {
     text-align: right;
   }
@@ -87,6 +108,38 @@ sub.fracbot {
     text-align: left;
   }
 }
+
+.sm-center-xs-left, .sm-center-xs-right, .md-center-xs-left, .md-center-xs-right, .lg-center-xs-left, .lg-center-xs-right {
+  text-align: center;
+}
+
+@media screen and (max-width:767px) {
+  .sm-center-xs-left  {
+    text-align: left;
+  }
+  .sm-center-xs-right  {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .md-center-xs-left  {
+    text-align: left;
+  }
+  .md-center-xs-right  {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width:1169px) {
+  .lg-center-xs-left  {
+    text-align: left;
+  }
+  .lg-center-xs-right  {
+    text-align: right;
+  }
+}
+
 
 
 

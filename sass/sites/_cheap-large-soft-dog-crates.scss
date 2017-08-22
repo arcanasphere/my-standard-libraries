@@ -1,0 +1,493 @@
+/* Begin _cheap-large-soft-dog-crates.scss Variables */
+// brought in front aquarium sites
+$skyblue: #9dd0fd;
+$paleblue: #e8f4ff;
+$seablue: #6d9dad;
+$darkaqua: #089;
+$paleaqua: #b8e0e6;
+$deepaqua: #00444c;
+$deepblue: #039;
+
+// added for dog-crate sites
+
+$bg-gray1: #e0e0e0;
+$bg-gray2: #adadad;
+$bg-gray3: #787878;
+$bg-gray4: #464646;
+
+$crate-green1: #0a0e03;
+$crate-green2: #2a330e;
+$crate-green3: #495918;
+$crate-green4: #728b27;
+$crate-green5: #99b349;
+$crate-green6: #b4c779;
+$crate-green7: #cedaa6;
+$crate-green8: #e8edd5;
+
+$dog-walking-green: #9ea292;
+
+$bg-purp1: #1b1717;
+$bg-purp2: #332f2f;
+$bg-purp3: #4e4544;
+$bg-purp4: #615857;
+$bg-purp5: #776b6d;
+$bg-purp6: #8e8180;
+$bg-purp7: #a39192;
+$bg-purp8: #b5a7a7;
+
+// old colors come from the original site
+$old-green: #8aa730;
+$old-graygreen: #4a5d72;
+
+
+$static-size: 14px;
+$background-gray: #eee;
+$background-yellow: #ffcd5c;
+/* End  _cheap-large-soft-dog-crates.scss Variables */
+
+
+/* Begin  _cheap-large-soft-dog-crates.scss */
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+
+#TopNavigation {
+  background-color: $bg-gray1;
+  @include down-gradient($bg-gray1, $bg-gray2);
+  border-bottom: 1px solid $old-graygreen;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+  a {
+    color: #000;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  a.navbar-brand {
+    font-size: 16px;
+  }
+  a:hover, a:active {
+    color: $crate-green2;
+    text-decoration: none;
+    background-color: $crate-green8;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.185);
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 2px 1px 3px rgba(0,0,0,0.185);
+    @include safe-transition-twice(background-color 0.2s linear, box-shadow 0.2s ease-in);
+  }
+  ul li {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1169px) {
+  #TopNavigation a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+#PoliciesDropdownItems {
+  background-color: $crate-green8;
+  a:hover {
+    background-color: $crate-green7;
+    @include grooming-border-radius(2px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #DogCrateNavbar {
+    margin-top: 60px;
+    a:hover {
+      @include grooming-border-radius(2px);
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  #PoliciesMenu {
+    font-size: 13px;
+    padding-left: 15px;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+}
+
+
+div.navbar-top-right {
+  float: right;
+}
+
+#buffer {
+  background-color: $background-gray;
+  border: 0;
+  height: 50px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  #buffer {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width:1169px) {
+  #buffer {
+    height: 72px;
+  }
+}
+
+
+
+#tempsearch {
+  margin-top: 0;
+  .btn-customSearch {
+    width: 100%;
+    background-color: $old-green;
+    color: $old-graygreen;
+    @include safe-transition-twice(background-color 0.35s ease-in, color 0.35s ease-out);
+    &:hover, &:focus {
+      color: $old-green;
+      background-color: $old-graygreen;
+    }
+  }
+  .dropdown-menu {
+    background-color: $crate-green8;
+    >li>a {
+      @include safe-transition(background-color 0.125s ease-in);
+    }
+    >li>a:hover, >li>a:focus {
+      background-color: $crate-green6;
+    }
+  }
+}
+
+#TopSearchButton {
+  background-color: $bg-gray2;
+  color: #000;
+  font-weight: 600;
+  @include safe-transition(background-color 0.35s ease-in);
+  &:hover, &:focus {
+    background-color: $crate-green8;
+    color: #222;
+  }
+}
+
+#static-dogCrate {
+  background-image: url('/images/walking-dog-bg-green.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0;
+  h1 {
+    @include grooming-text-outline-plus-shadow(1px, $old-graygreen, 1px, 2px, 3px, $bg-gray4);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 64px;
+    span {
+      color: $crate-green6;
+    }
+  }
+  #static-subtitle {
+    background-color: $bg-gray1;
+    color: #111;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    font-size: $static-size;
+    padding-top: $static-size;
+    padding-bottom: $static-size;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #static-dogCrate {
+    background-image: url('/images/walking-dog-bg-green-sm.png');
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width:767px) {
+  #static-dogCrate h1 {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width:359px) {
+  #static-dogCrate h1 {
+    min-height: 280px;
+  }
+}
+
+#Features {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h3 {
+    font-family: serif;
+    font-size: 24px;
+    color: $crate-green2;
+    font-weight: 800;
+  }
+  h4 {
+    font-family: serif;
+    font-size: 18px;
+    color: $crate-green3;
+    font-weight: 600;
+  }
+  h5 {
+    font-family: serif;
+    font-size: 16px;
+    color: $old-green;
+    font-weight: 600;
+  }
+}
+
+#EmailSignUp {
+  text-align: center;
+  h3 {
+    color: $old-green;
+  }
+  button {
+    background-color: $crate-green2;
+    color: #fff;
+    font-weight: 600;
+    @include safe-transition-twice(background-color 0.5s ease-in, color 0.5s ease-out);
+    &:hover, &:focus {
+      background-color: $crate-green8;
+      color: $crate-green2;
+    }
+  }
+  p {
+    color: #666;
+    font-weight: 600;
+    family: serif;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #EmailSignUp {
+    min-height: 220px;
+  }
+}
+
+#FeaturedItem {
+  overflow: hidden;
+  a {
+    color: $crate-green4;
+    font-weight: 600;
+    @include safe-transition(color 0.125s ease-in);
+  }
+  a:hover, a:active {
+    color: $crate-green5;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #FeaturedItem {
+    min-height: 351px;
+  }
+}
+
+#browse-by-category {
+  color: #333;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  p {
+    margin: 0;
+    padding: 0.1em;
+  }
+}
+
+
+#categories, #PageBody {
+  margin-top: 15px;
+  .category-column {
+    padding: 5px 0 0 0;
+    border: 1px solid #000;
+    height: 260px;
+    max-height: 260px;
+    text-align: center;
+    img {
+      text-align: center;
+      max-width: 90%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      padding: 0;
+      margin: 5px 0 0 0;
+      a {
+        color: $deepblue;
+        font-weight: 800;
+        @include safe-transition(color 0.33s ease-in);
+      }
+      a:hover {
+        color: $darkaqua;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #categories .category-column {
+    height: 216px;
+    max-height: 216px;
+  }
+}
+
+#pageFooter {
+  margin: 15px 0 0 0;
+  background-color: $bg-gray4;
+  h4, p, a {
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: serif;
+  }
+  h4 {
+    text-decoration: underline;
+  }
+}
+
+#copyright {
+  color: #777;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  p {
+    font-size: 14px;
+  }
+}
+
+#Slider1, #Slider2, #Slider3, #Slider4, #Slider5, #Slider6, #Slider7, #Slider8, #Slider9, #Slider10 {
+  display: none;
+  background-color: #fff;
+}
+
+.product-row {
+  border: 1px solid #333;
+  background-color: #fff;
+  @include grooming-box-shadows(3px, 3px, 5px, #000);
+  margin-bottom: 15px;
+  .product-image {
+    padding-top: 15px;
+  }
+  h2 {
+    font-size: 22px;
+    color: $crate-green2;
+  }
+  h3 {
+    font-size: 21px;
+    color: $crate-green1;
+  }
+  .product-category {
+    color: #777;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .product-additional-info, .buy, .reviews {
+    padding-bottom: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .buybars {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .reviews {
+    padding-bottom: 15px;
+  }
+
+  .pegasus-bootstrap-reviews {
+    margin-top: 15px;
+  }
+
+  #CPY, #CPY h6, #CPY h5, #CPY h4, #CPY h3, #CPY h2, #CPY h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    color: $crate-green1;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.375);
+  }
+  #HED h5 {
+    font-weight: 600;
+    color: #020;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-row {
+    margin-bottom: 45px;
+  }
+}
+
+.product-button {
+  float: left;
+}
+
+.crate-table tr td {
+  padding: 3px 6px;
+}
+@media screen and (min-width: 768px) {
+  .crate-table {
+    width:100%;
+  }
+  .product-additional-info {
+    padding-top: 15px;
+  }
+}
+
+table.wire-crate {
+  background-color: #fff;
+  th {
+    text-align: center;
+  }
+  tr td:first-of-type, tr th:first-of-type {
+    background-color: $crate-green8;
+    @include safe-transition(background-color 0.1s ease-in);
+  }
+  tr:hover td:first-of-type, tr:hover th:first-of-type {
+    background-color: $crate-green7;
+  }
+  a {
+    color: $crate-green4;
+    @include safe-transition(color 0.13s ease-in)
+  }
+  a:hover, a:active {
+    color: $old-green;
+    text-decoration: none;
+  }
+}
+
+/* Requested .info code */
+.info {
+width:85%;
+border:1px solid red;
+padding:8px;
+margin-left:10px;
+background-color:#f4fcfc;
+font-size:.875em;
+margin-bottom:10px;
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#PegSpot, #pegRATEspot, #RHLP, #pegPRESspot {
+  display: none !important;
+}
+
+
+/* End  _cheap-large-soft-dog-crates.scss */

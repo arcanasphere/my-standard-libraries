@@ -49,3 +49,25 @@
   -o-background-size: $instruction;
   background-size: $instruction;
 }
+
+
+@mixin safe-transition ($instructions) {
+  -webkit-transition: $instructions;
+  transition: $instructions;
+}
+
+@mixin safe-transition-twice ($instruction1, $instruction2) {
+  -webkit-transition: $instruction1, $instruction2;
+  transition: $instruction1, $instruction2;
+}
+
+
+@mixin down-gradient ($color1, $color2) {
+  background: rgba(173,173,173,1);
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2));
+  background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -o-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -ms-linear-gradient(top, $color1 0%, $color2 100%);
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}

@@ -8,7 +8,7 @@
   /* function preparePegBootLightBox() must be called by html file.
      See associated grooming-site-lightbox.html for an example. */
   function preparePegBogLightBox() {
-    $("#FullPageContainer").append('<div id="PegBootLightBox"><h2 id="PegBootLightBoxHeadline"></h2><span class="glyphicon glyphicon-remove-circle" id="PegBootLightBoxCloseIcon"></span></div>');
+    $("#FullPageContainer").append('<div id="PegBootLightBox"><h2 id="PegBootLightBoxHeadline"></h2><div id="PegBootLightBoxInner"></div><span class="glyphicon glyphicon-remove-circle" id="PegBootLightBoxCloseIcon"></span></div>');
   }
 
   /* Begin code to find & show the lightbox + image when clicked */
@@ -20,7 +20,7 @@
       case 'gif':
       case 'jpg':
       case 'png':
-        $("#PegBootLightBox").css('background-image', 'url(' + $ThisLink + ')');
+        $("#PegBootLightBoxInner").css('background-image', 'url(' + $ThisLink + ')');
         /* Begin Add Headline */
         var $picParent = $(this).closest("div.product-row");
         var $picHeadline = $picParent.find("h2");

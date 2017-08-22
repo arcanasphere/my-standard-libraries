@@ -1,0 +1,33 @@
+.xs-eight-across, {
+  width: 100% / 8;
+  float: left;
+}
+
+.sm-eight-across,
+.md-eight-across,
+.lg-eight-across {
+  width: 100%;
+  float: left;
+}
+
+
+@media screen and (min-width: 768px) {
+  .sm-eight-across {
+    width: 100% / 8;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .md-eight-across {
+    width: 100% / 8;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .lg-eight-across {
+    width: 100% / 8;
+    float: left;
+  }
+}

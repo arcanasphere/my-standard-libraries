@@ -1,0 +1,29 @@
+/* Begin crate-sites-not-bootstrap.scss */
+div.not-bootstrap {
+  table {
+    max-width: 96% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  img.c {
+    max-width: 25px !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.not-bootstrap {
+    iframe {
+      max-width: 96% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+}
+
+/* End crate-sites-not-bootstrap.scss */

@@ -1,0 +1,305 @@
+/* Begin _Aquarium-uv-sterilizers.scss Variables */
+$skyblue: #9dd0fd;
+$paleblue: #e8f4ff;
+$seablue: #6d9dad;
+$darkaqua: #089;
+$paleaqua: #b8e0e6;
+$deepaqua: #00444c;
+$deepblue: #039;
+$static-size: 14px;
+$background-gray: #eee;
+$background-yellow: #ffcd5c;
+/* End _Aquarium-uv-sterilizers.scss Variables */
+
+
+/* Begin _Aquarium-uv-sterilizers.scss */
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+
+#TopNavigation {
+  background-color: $skyblue;
+  border-bottom: 1px solid $seablue;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+  a {
+    color: #000;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  a.navbar-brand {
+    font-size: 15px;
+  }
+  a:hover {
+    color: #03f;
+    text-decoration: none;
+    background-color: #90c0ff;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.185);
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 2px 1px 3px rgba(0,0,0,0.185);
+    @include safe-transition-twice(background-color 0.2s linear, box-shadow 0.2s ease-in);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #AquariumNavBar {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  #UV-Filter-Right {
+    margin-right: 30px;
+    ul.navbar-nav li {
+      padding-left: 5px;
+    }
+  }
+}
+
+div.navbar-top-right {
+  float: right;
+}
+
+#buffer {
+  background-color: $background-gray;
+  border: 0;
+  height: 56px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  #buffer {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width:1169px) {
+  #buffer {
+    height: 72px;
+  }
+}
+
+
+
+#tempsearch {
+  margin-top: 0;
+  .btn-customSearch {
+    width: 100%;
+    background-color: $background-yellow;
+    color: #640;
+    @include safe-transition-twice(background-color 0.5s ease-in, color 0.5s ease-out);
+    &:hover, &:focus {
+      color: $background-yellow;
+      background-color: #640;
+    }
+  }
+  .dropdown-menu {
+    background-color: $paleblue;
+    >li>a {
+      @include safe-transition(background-color 0.125s ease-in);
+    }
+    >li>a:hover, >li>a:focus {
+      background-color: $skyblue;
+    }
+  }
+}
+
+#TopSearchButton {
+  background-color: $skyblue;
+  color: #000;
+  font-weight: 600;
+  @include safe-transition(background-color 0.35s ease-in);
+  &:hover, &:focus {
+    background-color: $paleblue;
+    color: #000;
+  }
+}
+
+#static-aquarium {
+  background-image: url('/images/aquarium-window-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 0;
+  h1 {
+    @include grooming-text-outline-plus-shadow(1px, #667, 1px, 2px, 3px, #99f);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 64px;
+    span {
+      color: $skyblue;
+    }
+  }
+  #static-subtitle {
+    background-color: $paleblue;
+    color: #111;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    font-size: $static-size;
+    padding-top: $static-size;
+    padding-bottom: $static-size;
+  }
+}
+
+#Features {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h3 {
+    font-family: serif;
+    font-size: 24px;
+    color: $deepblue;
+    font-weight: 800;
+  }
+  h4 {
+    font-family: serif;
+    font-size: 18px;
+    color: $deepblue;
+    font-weight: 600;
+  }
+  h5 {
+    font-family: serif;
+    font-size: 16px;
+    color: $darkaqua;
+    font-weight: 600;
+  }
+  #EmailSignUp {
+    text-align: center;
+    h3 {
+      color: $darkaqua;
+    }
+    button {
+      background-color: $darkaqua;
+      color: #fff;
+      font-weight: 600;
+      @include safe-transition-twice(background-color 0.5s ease-in, color 0.5s ease-out);
+      &:hover, &:focus {
+        background-color: $paleaqua;
+        color: $deepaqua;
+      }
+    }
+    p {
+      color: #666;
+      font-weight: 600;
+      family: serif;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #EmailSignUp {
+    min-height: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #FeaturedItem {
+    min-height: 351px;
+  }
+}
+
+#browse-by-category {
+  color: #333;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  p {
+    margin: 0;
+    padding: 0.1em;
+  }
+}
+
+
+#categories, #PageBody {
+  margin-top: 15px;
+  .category-column {
+    padding: 5px 0 0 0;
+    border: 1px solid #000;
+    height: 260px;
+    max-height: 260px;
+    text-align: center;
+    img {
+      text-align: center;
+      max-width: 90%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      padding: 0;
+      margin: 5px 0 0 0;
+      a {
+        color: $deepblue;
+        font-weight: 800;
+        @include safe-transition(color 0.33s ease-in);
+      }
+      a:hover {
+        color: $darkaqua;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #categories .category-column {
+    height: 216px;
+    max-height: 216px;
+  }
+}
+
+#pageFooter {
+  margin: 15px 0 0 0;
+  background-color: $darkaqua;
+  h4, a {
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: serif;
+  }
+  h4 {
+    text-decoration: underline;
+  }
+}
+
+#copyright {
+  color: #777;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  p {
+    font-size: 14px;
+  }
+}
+
+#Slider1, #Slider2, #Slider3 {
+  display: none;
+}
+
+/* End _Aquarium-uv-sterilizers.scss */
+
+
+/* Begin Temp Mockup Code inside of _aquarium_uv_sterilizers.scss */
+#MockupInfo {
+  border: 2px solid #222;
+  border-radius: 0px 7px 7px 7px;
+  font-family: sans-serif;
+  h2 {
+    font-family: serif;
+    color: $darkaqua;
+  }
+  b {
+    font-family: serif;
+    &:hover {
+      color: $darkaqua;
+      @include safe-transition(color 0.66s ease-in);
+    }
+  }
+}
+/* End Temp Mockup Code inside of _aquarium_uv_sterilizers.scss */

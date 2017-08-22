@@ -1,0 +1,12 @@
+/* Begin _navbar-lower-text.scss */
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a, .navbar-brand, .dropdown-toggle, #PoliciesMenu {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+}
+
+
+/* End _navbar-lower-text.scss */
