@@ -1,4 +1,4 @@
-allLoadedPresentations = [];
+var allLoadedPresentations = [];
 
 $(document).ready(function(){
    $(window).scroll(lazyload);
