@@ -1,3 +1,5 @@
+allLoadedPresentations = [];
+
 $(document).ready(function(){
    $(window).scroll(lazyload);
    lazyload();
@@ -62,4 +64,5 @@ function lazyLoadPres($this_pres) {
     hideonhandcol: '1',
     forcerating: '1'
   });
+  allLoadedPresentations.push($this_pres);   /* Add this presentation into the list of loaded presentations */
 }
