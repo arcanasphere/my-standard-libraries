@@ -1,0 +1,20 @@
+.swiper-custom-black {
+  .swiper-button-next {
+    background-image: url(/img/buttons/custom-swipe-next.png);
+  }
+  .swiper-button-prev {
+    background-image: url(/img/buttons/custom-swipe-prev.png);
+  }
+}
+
+.swiper-custom-black-thin {
+  .swiper-button-next {
+    background-image: url(/img/buttons/custom-swipe-black-thin-next.png);
+  }
+  .swiper-button-prev {
+    background-image: url(/img/buttons/custom-swipe-black-thin-prev.png);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #495918;
+  }
+}

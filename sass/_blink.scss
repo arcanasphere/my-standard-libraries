@@ -1,0 +1,21 @@
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation-name: blink-animation;
+  animation-duration: 1.6666s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

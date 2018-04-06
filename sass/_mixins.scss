@@ -71,3 +71,9 @@
   background: -ms-linear-gradient(top, $color1 0%, $color2 100%);
   background: linear-gradient(to bottom, $color1 0%, $color2 100%);
 }
+
+
+@mixin many-transitions ($transistors...) {
+  -webkit-transition: $transistors;
+  transition: $transistors;
+}
